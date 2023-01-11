@@ -66,8 +66,8 @@
                         echo "<td>".$row['product_cena']."</td>";
                         echo "<td>".$row['product_foto']."</td>";
                         echo "<td>".
-                                "<a href='edit_product.php'><input type='button' name='submit' id='button_edit' value='Edytuj'></a>".
-                                "<input type='submit' name='remove' id='button_usun' value='Usun ".$row['product_nazwa']."'>".
+                                "<a href='edit_product.php?id=".$row['ID_product']."'><input type='button' name='submit' id='button_edit' value='Edytuj'></a>".' '.
+                                "<a href='remove_product.php?id=".$row['ID_product']."><input type='button' name='submit' id='button_usun' value='Usun'>Usun</a>".
                             "</td>";
                     }
                 echo "</table>";
